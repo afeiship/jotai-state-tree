@@ -1,0 +1,15 @@
+{
+  "name": "webpack-riot",
+  "version": "0.0.0",
+  "description": "Roitjs meets webpack.",
+  "homepage": "https://github.com/afeiship/webpack-riot",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+  },
+  "license": "MIT",
+  "devDependencies": {
+  }
+}
