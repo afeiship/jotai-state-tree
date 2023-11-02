@@ -2,11 +2,6 @@ import React from 'react';
 import { Provider, useStore, useAtom } from 'jotai';
 import '@jswork/next';
 
-export interface JotaiStateTreeProps {
-  children: React.ReactNode;
-  stores: Record<string, any>;
-}
-
 const JotaiApp = (props: JotaiStateTreeProps) => {
   const store = useStore();
   const { stores } = props;

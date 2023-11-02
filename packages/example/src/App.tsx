@@ -1,4 +1,4 @@
-import JotaiStateTree from '@jswork/jotai-state-tree/src';
+import JotaiStateTree from '@jswork/jotai-state-tree';
 import stores from './stores';
 import './App.css';
 
@@ -8,9 +8,9 @@ function App() {
       <h1>jotai-state-tree</h1>
       <button
         onClick={() => {
-          console.log('click me');
+          nx.$set('recorder.action', 'record');
         }}>
-        Click me
+        Record
       </button>
     </JotaiStateTree>
   );
