@@ -1,8 +1,2 @@
-# webpack-riot
-> Roitjs meets webpack.
-
-
-## resources:
-
-## todos:
-- [ ] todo list..
+# react-component-library
+> A react component library template.

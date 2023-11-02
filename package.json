@@ -1,15 +1,19 @@
 {
-  "name": "webpack-riot",
-  "version": "0.0.0",
-  "description": "Roitjs meets webpack.",
-  "homepage": "https://github.com/afeiship/webpack-riot",
-  "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
-  },
+  "name": "react-component-library",
+  "version": "1.0.0",
+  "description": "A react component library template.",
+  "homepage": "https://js.work",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
   "scripts": {
-  },
-  "license": "MIT",
-  "devDependencies": {
+    "dev": "cd packages/example && npm run dev",
+    "predocs": "rm -rf docs",
+    "docs": "cd packages/example && npm run build",
+    "postdocs": "cp -R packages/example/dist docs",
+    "ln:build": "cd packages/lib && npm run build",
+    "ln:publish": "cd packages/lib && npm run release"
   }
 }
