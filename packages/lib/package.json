@@ -1,6 +1,6 @@
 {
   "name": "@jswork/jotai-state-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup",
-    "postbuild":"cp src/type.d.ts dist/type.d.ts",
+    "postbuild": "cp src/type.d.ts dist/type.d.ts",
     "release": "release-it --ci"
   },
   "devDependencies": {
@@ -29,5 +29,13 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "get",
+    "jotai",
+    "react",
+    "set",
+    "state",
+    "tree"
+  ]
 }
