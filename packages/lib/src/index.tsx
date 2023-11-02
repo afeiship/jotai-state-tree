@@ -1,12 +1,13 @@
 import React from 'react';
-import { Provider, useStore, useAtom } from 'jotai';
+import { Provider, useStore, useAtom, createStore } from 'jotai';
 import '@jswork/next';
 
 const JotaiApp = (props: JotaiStateTreeProps) => {
   const store = useStore();
   const { stores } = props;
 
-  nx.$get = (key: string) => {
+  nx.$get = (key?: string) => {
+    if (!key) return store;
     const nameAtom = nx.get(stores, key);
     return store.get(nameAtom);
   };
@@ -30,7 +31,7 @@ const JotaiApp = (props: JotaiStateTreeProps) => {
 export default class extends React.Component<JotaiStateTreeProps> {
   render() {
     return (
-      <Provider>
+      <Provider store={createStore()}>
         <JotaiApp {...this.props} />
       </Provider>
     );

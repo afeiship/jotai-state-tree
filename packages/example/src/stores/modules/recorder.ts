@@ -8,6 +8,8 @@ const recorder = new Recorder({
 });
 
 const action = atom('idle', (get, set, val) => {
+  console.log('action: ', val);
+
   if (val === 'record') {
     recorder.start();
   }

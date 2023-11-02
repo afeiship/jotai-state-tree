@@ -1,18 +1,30 @@
-import JotaiStateTree from '@jswork/jotai-state-tree';
-import stores from './stores';
 import './App.css';
 
 function App() {
+  const [action, setAction] = nx.$use('recorder.action');
   return (
-    <JotaiStateTree stores={stores}>
-      <h1>jotai-state-tree</h1>
+    <>
+      <h1>jotai-state-tree: {action} </h1>
       <button
         onClick={() => {
           nx.$set('recorder.action', 'record');
         }}>
         Record
       </button>
-    </JotaiStateTree>
+      <button
+        onClick={(e) => {
+          setAction('stop');
+        }}>
+        Stop
+      </button>
+      <button
+        onClick={(e) => {
+          // setAction('play');
+          nx.$set('recorder.action', 'play');
+        }}>
+        Play
+      </button>
+    </>
   );
 }
 
