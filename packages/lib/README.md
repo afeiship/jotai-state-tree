@@ -5,3 +5,9 @@
 ```shell
 yarn add @jswork/jotai-state-tree
 ```
+
+## types
+```ts
+/// <reference types="@jswork/next" />
+/// <reference types="@jswork/jotai-state-tree/@types" />
+```
