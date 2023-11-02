@@ -13,7 +13,7 @@ export default defineConfig({
   splitting: true,
   target: 'es6',
   bundle: true,
-  external: ['react', 'react-dom','jotai'],
+  external: ['react', 'react-dom', 'jotai', '@jswork'],
   outExtension({ format }) {
     return {
       js: `.${format}.js`,

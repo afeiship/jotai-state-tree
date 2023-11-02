@@ -9,7 +9,6 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup",
-    "postbuild": "cp src/type.d.ts dist/type.d.ts",
     "release": "release-it --ci"
   },
   "devDependencies": {

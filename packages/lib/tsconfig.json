@@ -28,7 +28,8 @@
   },
   "include": [
     "src",
-    "public"
+    "public",
+    "@types"
   ],
   "exclude": [
     "node_modules",
