@@ -1,2 +1,2 @@
-# react-component-library
-> A react component library template.
+# jotai-state-tree
+> Jotai state tree.
